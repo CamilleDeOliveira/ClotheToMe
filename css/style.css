@@ -1,10 +1,50 @@
-#map {
-    width: 100%;
-    height: 100%;
+body, html {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  /* draw localization icon */
+  /* to draw white circle */
+  /* custom content popup background */
+  /* custom adress popup background */
+  /* custom popup icon */
+  /* custom back icon */
 }
-
-/* draw localization icon */
-.marker-pin {
+body main header, html main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  margin: 0 auto;
+  z-index: 1;
+  padding-top: 20px;
+}
+body main header .content-img, html main header .content-img {
+  display: flex;
+  align-items: flex-end;
+}
+body main header .navbar .nav .nav-item, html main header .navbar .nav .nav-item {
+  display: inline-block;
+  margin: 10px;
+}
+body main header .navbar .nav .nav-item .nav-link, html main header .navbar .nav .nav-item .nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+body #map, html #map {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body .marker-pin, html .marker-pin {
   width: 30px;
   height: 30px;
   background-color: #e0b704;
@@ -15,41 +55,35 @@
   top: 50%;
   margin: -15px 0 0 -15px;
 }
-/* to draw white circle */
-.marker-pin::after {
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: 7px 0 0 7px;
-    background: #f9F9F9;
-    position: absolute;
-    border-radius: 50%;
- }
-
-/* custom content popup background */
- .leaflet-popup-content-wrapper .leaflet-popup-content {
-   font-family: helvetica;
-   color: black;
-   font-size: 15px;
- }
- /* custom adress popup background */
-  .leaflet-popup-content-wrapper .leaflet-popup-content p{
-    font-family: helvetica;
-    color: black;
-    font-size: 13px;
-    padding: 0;
-  }
-
-/* custom popup icon */
-div.leaflet-popup-content-wrapper {
+body .marker-pin::after, html .marker-pin::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin: 7px 0 0 7px;
+  background: #f9F9F9;
+  position: absolute;
+  border-radius: 50%;
+}
+body .leaflet-popup-content-wrapper .leaflet-popup-content, html .leaflet-popup-content-wrapper .leaflet-popup-content {
+  font-family: helvetica;
+  color: black;
+  font-size: 15px;
+}
+body .leaflet-popup-content-wrapper .leaflet-popup-content p, html .leaflet-popup-content-wrapper .leaflet-popup-content p {
+  font-family: helvetica;
+  color: black;
+  font-size: 13px;
+  padding: 0;
+}
+body div.leaflet-popup-content-wrapper, html div.leaflet-popup-content-wrapper {
   background-color: #e0b704;
   border-radius: 0;
 }
-/* custom back icon */
-.leaflet-container a.leaflet-popup-close-button {
-	color: black !important;
-	}
-
-a.leaflet-popup-close-button:hover {
-	color: #f9F9F9 !important;
+body .leaflet-container a.leaflet-popup-close-button, html .leaflet-container a.leaflet-popup-close-button {
+  color: black !important;
 }
+body a.leaflet-popup-close-button:hover, html a.leaflet-popup-close-button:hover {
+  color: #f9F9F9 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

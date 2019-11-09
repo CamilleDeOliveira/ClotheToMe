@@ -1,0 +1,137 @@
+// VARIABLES
+
+//FONTS
+$font-stack: 'Raleway', sans-serif;
+
+//BACKGROUND COLOR
+$background-body: #0A0A0A;
+
+//COLOR
+$color-text: #fff;
+$color-link-hover: #7D7D7D;
+$base-color:#0D68E7;
+
+//FONT-WEIGHT
+$title-font-weight: 700;
+$text-link-font-weight: 300;
+$footer-link-weight: lighter;
+
+//FONT SIZE
+$size-p: 12px;
+$size-footer: 10px;
+
+//ALL NONE
+$t-none: none;
+
+//DISPLAY
+$d-flex: flex;
+
+//LINE HEIGHT
+$min-lh: 20px;
+$max-lh: 50px;
+
+//TRANSITION
+$t-anim: 1s;
+
+//MARGIN
+$m-auto: 0 auto;
+
+body, html{
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: $font-stack;
+  scroll-behavior: smooth;
+  main{
+    header{
+      display: $d-flex;
+      justify-content:space-between;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%);
+      width: 80%;
+      margin: $m-auto;
+      z-index: 1;
+      padding-top: 20px;
+      .content-img{
+        display: $d-flex;
+        align-items: flex-end;
+      }
+      .navbar{
+        .nav{
+          .nav-item{
+            display: inline-block;
+            margin: 10px;
+            .nav-link{
+              text-decoration: $t-none;
+              color: $color-text;
+            }
+          }
+        }
+      }
+    }
+  }
+
+// CUSTOM MAP
+  #map {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  /* draw localization icon */
+  .marker-pin {
+    width: 30px;
+    height: 30px;
+    background-color: #e0b704;
+    border-radius: 50% 50% 50% 0;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+  }
+  /* to draw white circle */
+  .marker-pin::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: 7px 0 0 7px;
+    background: #f9F9F9;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  /* custom content popup background */
+  .leaflet-popup-content-wrapper .leaflet-popup-content {
+    font-family: helvetica;
+    color: black;
+    font-size: 15px;
+  }
+  /* custom adress popup background */
+  .leaflet-popup-content-wrapper .leaflet-popup-content p{
+    font-family: helvetica;
+    color: black;
+    font-size: 13px;
+    padding: 0;
+  }
+
+  /* custom popup icon */
+  div.leaflet-popup-content-wrapper {
+    background-color: #e0b704;
+    border-radius: 0;
+  }
+  /* custom back icon */
+  .leaflet-container a.leaflet-popup-close-button {
+    color: black !important;
+  }
+
+  a.leaflet-popup-close-button:hover {
+    color: #f9F9F9 !important;
+  }
+}
