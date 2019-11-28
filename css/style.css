@@ -42,7 +42,7 @@ body #map, html #map {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 }
 body .marker-pin, html .marker-pin {
   width: 30px;
