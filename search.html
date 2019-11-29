@@ -2,12 +2,126 @@
 <head>
   <meta charset="UTF-8">
   <title>Clothe To Me</title>
+  <link rel="stylesheet" href="css/search.css"/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/reset.css"/>
-  <link rel="stylesheet" href="css/search.css"/>
   <link href="https://fonts.googleapis.com/css?family=Michroma|Open+Sans:400,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
 </head>
 <body>
+  <div class="overlay-search" id="overlay-search">
+    <header>
+      <section class="content-img">
+        <img src="images/Logo.png" alt="">
+      </section>
+    </header>
+    <section class="content-title-app__login">
+      <h2>CHOOSE YOUR DEPARTMENT</h2>
+      <select name="Department" value="Departe">
+        <option value="volvo">Department : </option>
+        <option value="saab">01 - Ain</option>
+        <option value="fiat">02 - Aisne</option>
+        <option value="audi">03 - Allier</option>
+        <option value="saab">04 - Alpes-de-Haute-Provence</option>
+        <option value="fiat">05 - Hautes-alpes</option>
+        <option value="audi">06 - Alpes-maritimes</option>
+        <option value="saab">07 - Ardèche</option>
+        <option value="fiat">08 - Ardennes</option>
+        <option value="audi">09 - Ariège</option>
+        <option value="saab">10 - Aube</option>
+        <option value="fiat">11 - Aude</option>
+        <option value="audi">12 - Aveyron</option>
+        <option value="saab">13 - Bouches-du-Rhône</option>
+        <option value="fiat">14 - Calvados</option>
+        <option value="audi">15 - Cantal</option>
+        <option value="saab">16 - Charente</option>
+        <option value="fiat">17 - Charente-maritime</option>
+        <option value="audi">18 - Cher</option>
+        <option value="saab">19 - Corrèze</option>
+        <option value="fiat">2a - Corse-du-sud </option>
+        <option value="audi">2b - Haute-Corse</option>
+        <option value="saab">21 - Côte-d'Or</option>
+        <option value="fiat">22 - Côtes-d'Armor</option>
+        <option value="audi">23 - Creuse</option>
+        <option value="saab">24 - Dordogne</option>
+        <option value="fiat">25 - Doubs</option>
+        <option value="audi">26 - Drôme</option>
+        <option value="saab">27 - Eure</option>
+        <option value="fiat">28 - Eure-et-loir</option>
+        <option value="audi">29 - Finistère</option>
+        <option value="fiat">30 - Gard</option>
+        <option value="audi">31 - Haute-garonne</option>
+        <option value="fiat">32 - Gers</option>
+        <option value="audi">33 - Gironde</option>
+        <option value="fiat">34 - Hérault</option>
+        <option value="audi">35 - Ille-et-vilaine</option>
+        <option value="fiat">36 - Indre</option>
+        <option value="audi">37 - Indre-et-loire</option>
+        <option value="fiat">38 - Isère</option>
+        <option value="audi">39 - Jura</option>
+        <option value="fiat">40 - Landes</option>
+        <option value="audi">41 - Loir-et-cher</option>
+        <option value="fiat">42 - Loire</option>
+        <option value="audi">43 - Haute-loire</option>
+        <option value="fiat">44 - Loire-atlantique</option>
+        <option value="audi">45 - Loiret</option>
+        <option value="fiat">46 - Lot</option>
+        <option value="audi">47 - Lot-et-garonne</option>
+        <option value="fiat">48 - Lozère</option>
+        <option value="audi">49 - Maine-et-loire</option>
+        <option value="fiat">50 - Manche</option>
+        <option value="audi">51 - Marne</option>
+        <option value="fiat">52 - Haute-marne</option>
+        <option value="audi">53 - Mayenne</option>
+        <option value="fiat">54 - Meurthe-et-moselle</option>
+        <option value="audi">55 - Meuse</option>
+        <option value="fiat">56 - Morbihan</option>
+        <option value="audi">57 - Moselle</option>
+        <option value="fiat">58 - Nièvre</option>
+        <option value="audi">59 - Nord</option>
+        <option value="fiat">60 - Oise</option>
+        <option value="audi">61 - Orne</option>
+        <option value="fiat">62 - Pas-de-calais</option>
+        <option value="audi">63 - Puy-de-dôme</option>
+        <option value="fiat">64 - Pyrénées-atlantiques</option>
+        <option value="audi">65 - Hautes-Pyrénées</option>
+        <option value="fiat">66 - Pyrénées-orientales</option>
+        <option value="audi">67 - Bas-rhin</option>
+        <option value="fiat">68 - Haut-rhin </option>
+        <option value="audi">69 - Rhône</option>
+        <option value="fiat">70 - Haute-saône</option>
+        <option value="audi">71 - Saône-et-loire</option>
+        <option value="fiat">72 - Sarthe</option>
+        <option value="audi">73 - Savoie</option>
+        <option value="fiat">74 - Haute-savoie</option>
+        <option value="audi">75 - Paris</option>
+        <option value="fiat">76 - Seine-maritime</option>
+        <option value="audi">77 - Seine-et-marne</option>
+        <option value="fiat">78 - Yvelines</option>
+        <option value="audi">79 - Deux-sèvres</option>
+        <option value="fiat">80 - Somme</option>
+        <option value="audi">81 - Tarn</option>
+        <option value="fiat">82 - Tarn-et-garonne</option>
+        <option value="audi">83 - Var</option>
+        <option value="fiat">84 - Vaucluse</option>
+        <option value="audi">85 - Vendée</option>
+        <option value="fiat">86 - Vienne</option>
+        <option value="audi">87 - Haute-vienne</option>
+        <option value="fiat">88 - Vosges</option>
+        <option value="audi">89 - Yonne</option>
+        <option value="fiat">90 - Territoire de belfort</option>
+        <option value="audi">91 - Essonne</option>
+        <option value="fiat">92 - Hauts-de-seine</option>
+        <option value="audi">93 - Seine-Saint-Denis</option>
+        <option value="fiat">94 - Val-de-marne</option>
+        <option value="audi">95 - Val-d'oise</option>
+      </select>
+      <div class="content__img__search">
+        <img src="images/arrow.png" alt="" id="next-step">
+      </div>
+    </section>
+  </div>
   <div class="hamburger" id="menu">
     <img src="images/close.png" alt="" id="close">
     <div class="content-link">
@@ -17,22 +131,13 @@
     </div>
   </div>
   <main>
-    <header>
+    <section class="content-search">
       <section class="content-title">
         <h1>SEARCH</h1>
       </section>
-    </header>
+    </section>
 
     <section class="filters">
-      <div class="ui-group">
-        <h3>Lieu</h3>
-        <div class="button-group js-radio-button-group" data-filter-group="color">
-          <button class="button is-checked" data-filter="">Tous</button>
-          <button class="button" data-filter=".ile_de_france">Ile de France</button>
-          <button class="button" data-filter=".nouvelle_aquitaine">Nouvelle Aquitaine</button>
-          <button class="button" data-filter=".paca">PACA</button>
-        </div>
-      </div>
       <div class="ui-group">
         <h3>Style</h3>
         <div class="button-group js-radio-button-group" data-filter-group="size">
@@ -79,19 +184,18 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer-search">
     <div class="content-footer">
       <p>menu</p>
       <img src="images/hamburger.png" alt="" id="hamburger">
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="js/map.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
   <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/search.js"></script>
 </body>
 </html>

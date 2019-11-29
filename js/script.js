@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  console.log("il reconnais");
   // MENU BURGER
   $("div#menu").hide();
   $("#hamburger").on('click', function () {
@@ -18,5 +18,11 @@ $(document).ready(function () {
     $(".content-title-app").css({
       "display" : "none"
     });
+  });
+
+  // OVERLAY SEARCH
+  console.log("je reconna")
+  $("#next-step").on('click', function () {
+    $("div#overlay-search").hide();
   });
 })
