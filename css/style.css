@@ -339,5 +339,8 @@ body .leaflet-container a.leaflet-popup-close-button, html .leaflet-container a.
 body a.leaflet-popup-close-button:hover, html a.leaflet-popup-close-button:hover {
   color: #f9F9F9 !important;
 }
+body .leaflet-control, html .leaflet-control {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */

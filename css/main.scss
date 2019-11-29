@@ -399,4 +399,8 @@ body, html{
   a.leaflet-popup-close-button:hover {
     color: #f9F9F9 !important;
   }
+
+  .leaflet-control {
+    display: none;
+  }
 }
